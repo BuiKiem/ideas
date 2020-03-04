@@ -1,9 +1,16 @@
 import React from "react";
+import { Button, CssBaseline } from "@material-ui/core";
+import { Inbox as InboxIcon } from "@material-ui/icons";
 
 export const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <>
+      <CssBaseline />
+      <div>
+        <Button variant="contained" color="primary" startIcon={<InboxIcon />}>
+          INBOX
+        </Button>
+      </div>
+    </>
   );
 };
